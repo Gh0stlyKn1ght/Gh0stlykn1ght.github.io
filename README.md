@@ -1,2 +1,2 @@
-# -gh0stlykn1ght.github.io
+# Gh0stlykn1ght.github.io
 portfolio
