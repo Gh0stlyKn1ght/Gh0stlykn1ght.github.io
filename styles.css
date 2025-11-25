@@ -682,7 +682,7 @@ a:hover {
 }
 
 .phase-card.locked {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .phase-card.locked:hover {
@@ -690,12 +690,34 @@ a:hover {
 }
 
 .phase-card.locked .phase-body {
-  filter: blur(0.6px);
+  filter: blur(2px);
 }
 
 .phase-card.locked .btn {
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.phase-card.locked .phase-actions {
+  position: relative;
+}
+
+.phase-card.locked .phase-actions::after {
+  content: "Unlocks after Phase 1 is complete.";
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.phase-card.locked:hover .phase-actions::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .bullet-list {
