@@ -1,0 +1,453 @@
+---
+layout: null
+title: Gh0stlyKn1ght | Portfolio
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gh0stlyKn1ght | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+  <body>
+  <div class="beam"></div>
+  <div class="noise"></div>
+  <div class="glow glow-top"></div>
+  <div class="glow glow-bottom"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <span class="brand-mark">GK</span>
+        <div>
+          <div class="brand-name">Gh0stlyKn1ght</div>
+          <div class="brand-sub">Builder · Tinkerer · Engineer</div>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="#about" data-target="about">About</a>
+        <a href="#work" data-target="work">Projects</a>
+        <a href="#skills" data-target="skills">Skills</a>
+        <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+        <a href="#contact" data-target="contact">Contact</a>
+      </nav>
+      <a class="ghost-link" href="#contact">Let’s talk</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Portfolio 2025</div>
+          <h1>Shipping neon-bold products with educator-grade engineering.</h1>
+          <p class="lede">I’m Gh0stlyKn1ght — New Jersey-based robotics, cybersecurity, and STEM educator who turns classrooms into real-world labs with cyberpunk creativity and no-nonsense technical skill.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">View projects</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Years tinkering with code</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">243</div>
+              <div class="stat-label">Public repos & experiments</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">13</div>
+              <div class="stat-label">Folks following along</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="pulse"></div>
+          <div class="card-head">Now</div>
+          <p>Teaching and building: robotics, cyber, and web security labs that translate into real-world, student-ready demos.</p>
+          <ul class="pill-list">
+            <li>Robotics & fabrication</li>
+            <li>Web app security</li>
+            <li>TypeScript + React</li>
+            <li>Hands-on labs</li>
+          </ul>
+          <div class="terminal">
+            <div class="dots">
+              <span></span><span></span><span></span>
+            </div>
+            <pre><code>$ npm run ship
+> robotics lab ready...
+✓ students hacking & learning</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section">
+      <div class="container">
+        <div class="theme-panel">
+          <div class="beam"></div>
+          <div class="theme-badge">Jekyll · 24k Neon</div>
+          <h2 style="margin-top:12px;">What each option really means for you</h2>
+          <p class="lede">Jekyll keeps it lean: Markdown in, HTML out. Perfect for shipping research posts, writeups, course pages, and all the robotics/cyber thinking without hand-building layouts each time.</p>
+          <div class="theme-grid" style="margin-top:16px;">
+            <div class="highlight">
+              <div class="mini-title">Static, steady</div>
+              <p>Zero backend to babysit. Push to GitHub Pages and let the CDN handle it.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Fits your plate</div>
+              <p>You’re teaching full-time with three parallel empires forming. Jekyll lets you post fast and keep momentum.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Markdown-first</div>
+              <p>Draft in Markdown, publish in minutes. Perfect for course updates or lab notes.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Future-proof</div>
+              <p>Clean HTML, no runtime lock-in. You can redesign the shell without rewriting content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <div class="eyebrow">About</div>
+          <h2>I craft focused, reliable experiences and classrooms that feel effortless.</h2>
+          <p>I’m a computer science, engineering, and robotics educator who fuses industry-driven STEM, cyberpunk creativity, and security-minded rigor. Students learn to think, build, break, fix, and engineer like professionals—through VEX robotics, microcontrollers, CAD, Wi‑Fi engineering, ethical hacking, and web security.</p>
+          <div class="highlight-grid">
+            <div class="highlight">
+              <div class="mini-title">Educator-engineer</div>
+              <p>Full-year learning paths across robotics, cyber, and engineering; every project maps to real tech careers.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Systems-first</div>
+              <p>Design reusable components and labs so students can explore safely without losing rigor.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Security-forward</div>
+              <p>Specialty in web app security and ethical hacking—teaching why systems break and how to build safer ones.</p>
+            </div>
+            <div class="highlight">
+              <div class="mini-title">Tools & platforms</div>
+              <p>Tinkercad, VEXcode, Arduino, Khan Academy, Code.org, digital fabrication, and competition-ready builds.</p>
+            </div>
+          </div>
+        </div>
+        <div class="callout">
+          <div class="callout-label">What I’m aiming for</div>
+          <ul>
+            <li>Deliver purposeful experiences, not just features.</li>
+            <li>Keep a tight feedback loop between build → learn → refine.</li>
+            <li>Bridge cyber, robotics, and fabrication into accessible curricula.</li>
+            <li>Mentor young builders, hackers, and creators into confident engineers.</li>
+            <li>Live the mantra: “Smarter, not harder.” Favorite quote: “HACK THE PLANET!”</li>
+          </ul>
+          <div class="highlight" style="margin-top:14px;">
+            <div class="mini-title">Education</div>
+            <p><strong>B.S. in Cybersecurity</strong> — Bellevue University</p>
+            <p><strong>MBA Candidate</strong> — Rutgers University (2026)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Projects</div>
+          <h2>Selected builds with punchy results.</h2>
+          <p>From experimental interfaces to production launches, here's a taste of the things I like to ship.</p>
+        </div>
+        <a class="ghost-link" href="#contact">Open to collaborations →</a>
+      </div>
+
+      <div class="container card-grid">
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2025</div>
+            <div class="tag">Security tool</div>
+          </div>
+          <h3>DeepSniff</h3>
+          <p>AI-powered packet analyzer (Windows prototype) with real-time capture and AI-driven interpretation; dashboard planned.</p>
+          <ul class="pill-list">
+            <li>Security</li>
+            <li>Education</li>
+            <li>Automation</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener">Code</a>
+            <a href="#contact">Schedule a walkthrough</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2025</div>
+            <div class="tag">Platform</div>
+          </div>
+          <h3>Robotnix.dev</h3>
+          <p>Robotics + nix-flavored dev hub with curated writeups, build logs, and automation recipes for hardware-heavy workflows.</p>
+          <ul class="pill-list">
+            <li>Nix</li>
+            <li>Robotics</li>
+            <li>Docs & guides</li>
+          </ul>
+          <div class="links">
+            <a href="https://robotnix.dev" target="_blank" rel="noopener">Visit site</a>
+            <a href="#contact">Collaborate</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2024</div>
+            <div class="tag">CLI</div>
+          </div>
+          <h3>Ghost404</h3>
+          <p>Debian terminal tool: input a domain, auto-screenshot the target; includes -h help for quick usage.</p>
+          <ul class="pill-list">
+            <li>Linux</li>
+            <li>Automation</li>
+            <li>Recon</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener">Code</a>
+            <a href="#contact">Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">Active</div>
+            <div class="tag">Pentesting</div>
+          </div>
+          <h3>Web App PT Labs</h3>
+          <p>Hands-on assessments: file uploads, HTTP verb tampering, IDOR, SQLi, session handling, auth bypass, XXE labs.</p>
+          <ul class="pill-list">
+            <li>OWASP Top 10</li>
+            <li>Burp Suite</li>
+            <li>Nmap</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">Walkthroughs</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2024</div>
+            <div class="tag">Research</div>
+          </div>
+          <h3>Malware Analysis Workflow</h3>
+          <p>Evidence acquisition toolkit with static/dynamic analysis, memory forensics, and threat intel collection flows.</p>
+          <ul class="pill-list">
+            <li>DFIR</li>
+            <li>Analysis</li>
+            <li>Tooling</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">Share workflow</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2024</div>
+            <div class="tag">Web</div>
+          </div>
+          <h3>SecurityResearcher.dev</h3>
+          <p>Eleventy-powered hub for cyber research, tools, and writeups; focused on accessible publishing for security content.</p>
+          <ul class="pill-list">
+            <li>Eleventy</li>
+            <li>Static site</li>
+            <li>Research</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">View</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">Planned</div>
+            <div class="tag">Robotics Sec</div>
+          </div>
+          <h3>Robotics Security Experiments</h3>
+          <p>Lab series: ROS topic injection, drone telemetry manipulation, GPS spoofing simulation, sensor spoofing on ground robots.</p>
+          <ul class="pill-list">
+            <li>ROS2</li>
+            <li>UAV</li>
+            <li>Security</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">Follow progress</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2024</div>
+            <div class="tag">Infra</div>
+          </div>
+          <h3>GhostlyFi</h3>
+          <p>Local Wi-Fi dashboard inspired by WiFi Pineapple: adapter info, client tracking, injection mode toggle, runs offline.</p>
+          <ul class="pill-list">
+            <li>Networking</li>
+            <li>Dashboard</li>
+            <li>Offline-first</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="card-top">
+            <div class="pill">2024</div>
+            <div class="tag">Debugging</div>
+          </div>
+          <h3>Web Dashboard Fixes</h3>
+          <p>Fixing Vercel asset paths, 404 media issues, bundle chunk sizing, and accessibility options for a live dashboard.</p>
+          <ul class="pill-list">
+            <li>Debugging</li>
+            <li>Performance</li>
+            <li>Accessibility</li>
+          </ul>
+          <div class="links">
+            <a href="#contact">Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">🔥 STACKS & STRENGTHS</div>
+          <h2>Tools I rely on when engineering, security, and teaching all intersect.</h2>
+        </div>
+      </div>
+      <div class="container skills-grid">
+        <div class="skill-card">
+          <div class="mini-title">Core</div>
+          <p>JavaScript / TypeScript, Python, HTML/CSS, C++, Rust (beginner), SQL.</p>
+          <p>Building fast, clean, modular systems for education, robotics, and security research.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Robotics & Embedded</div>
+          <p>VEX, Arduino, microcontrollers, sensors, circuit analysis, robotics design, FRC systems.</p>
+          <p>Designing and teaching robotics fundamentals, embedded logic, and iterative engineering.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Cybersecurity</div>
+          <p>Web app security, OWASP Top 10, file upload attacks, pentesting fundamentals, Burp Suite, Nmap, Linux tooling, OSINT, DFIR basics.</p>
+          <p>Secure design, offensive testing, and real-world attack modeling for educational labs (Kali/Tails in the toolkit).</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Front-end</div>
+          <p>React, Next.js, Astro, TypeScript component systems, GSAP, Motion.</p>
+          <p>Polished, responsive UIs for curriculum portals, dashboards, and interactive labs.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Back-end</div>
+          <p>Node.js, Express, FastAPI, REST APIs, authentication flows, database modeling.</p>
+          <p>Reliable services for educational tools, robotics dashboards, and security utilities.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">AI & Computer Vision</div>
+          <p>LLM integration, AI-assisted automation, prompt engineering, computer vision fundamentals.</p>
+          <p>Experimenting with AI to enhance robotics, curriculum, and security workflows.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Infrastructure</div>
+          <p>GitHub Pages, GitHub Actions, Git, Netlify, DigitalOcean, Docker (familiar), local server setups, Linux (Arch, Debian, Ubuntu), Windows.</p>
+          <p>Optimizing small-scale systems and CI/CD for classrooms, demos, and R&amp;D environments.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Creative & Media</div>
+          <p>3D design, motion graphics, 35mm film aesthetics, digital restoration, cinematic presentation.</p>
+          <p>Visual storytelling to elevate lessons, robotics media, and personal branding.</p>
+        </div>
+        <div class="skill-card">
+          <div class="mini-title">Collaboration & Leadership</div>
+          <p>Instructional design, curriculum development, student mentoring, FRC coaching, technical writing.</p>
+          <p>Leading teams through clarity, structure, and hands-on problem solving.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Ready to build? Let’s chat.</h2>
+          <p>Tell me about the idea, timeline, and what a great outcome looks like.</p>
+        </div>
+      </div>
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <div class="mini-title">Email</div>
+          <a class="contact-link" href="mailto:hey@gh0stlykn1ght.dev">hey@gh0stlykn1ght.dev</a>
+          <div class="mini-title">Signal boost</div>
+          <p>Open to collaborations, experiments, and shipping the next release together.</p>
+          <ul class="pill-list" style="margin-top:10px;">
+            <li>New Jersey · remote friendly</li>
+            <li>Hireable</li>
+            <li>Robotics & cyber educator</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            What are we building?
+            <textarea name="message" rows="4" placeholder="Project details, goals, timeline..."></textarea>
+          </label>
+          <button type="submit" class="btn primary">Send message</button>
+          <p class="form-note">This is a static form. Hook it up to your favorite backend or form service to make it live.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand-name">Gh0stlyKn1ght</div>
+          <p>Engineering thoughtful experiences and labs with a bias toward action.</p>
+          <p class="footer-edu">B.S. Cybersecurity — Bellevue University · MBA Candidate — Rutgers University (2026)</p>
+        </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-meta">
+        <div class="pill">Always shipping</div>
+        <div>Last updated 2025</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>

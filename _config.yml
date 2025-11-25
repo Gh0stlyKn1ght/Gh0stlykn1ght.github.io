@@ -1,0 +1,14 @@
+title: "Gh0stlyKn1ght"
+description: "Personal portfolio for Gh0stlyKn1ght."
+url: "https://Gh0stlyKn1ght.github.io"
+baseurl: ""
+theme: null
+permalink: pretty
+plugins: []
+exclude:
+  - node_modules
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .jekyll-cache
+  - _site
