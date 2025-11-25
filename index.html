@@ -14,18 +14,23 @@ title: Gh0stlyKn1ght | Portfolio
   <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
 </head>
   <body>
-  <div class="beam"></div>
-  <div class="noise"></div>
-  <div class="glow glow-top"></div>
-  <div class="glow glow-bottom"></div>
+  <div class="beam" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-top" aria-hidden="true"></div>
+  <div class="glow glow-bottom" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container nav-wrap">
       <div class="brand">
-        <span class="brand-mark">GK</span>
         <div>
-          <div class="brand-name">Gh0stlyKn1ght</div>
-          <div class="brand-sub">Builder · Tinkerer · Engineer</div>
+          <a class="brand-name" href="{{ '/' | relative_url }}">Gh0stlyKn1ght</a>
+          <div class="brand-sub">
+            <span class="sub-accent sub-blue">Robotics</span>
+            <span class="sub-sep">·</span>
+            <span class="sub-accent sub-red">Security</span>
+            <span class="sub-sep">·</span>
+            <span class="sub-accent sub-pink">Autonomy</span>
+          </div>
         </div>
       </div>
       <button class="menu-toggle" aria-label="Toggle navigation">
@@ -39,7 +44,6 @@ title: Gh0stlyKn1ght | Portfolio
         <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
         <a href="#contact" data-target="contact">Contact</a>
       </nav>
-      <a class="ghost-link" href="#contact">Let’s talk</a>
     </div>
   </header>
 
@@ -48,8 +52,8 @@ title: Gh0stlyKn1ght | Portfolio
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">Portfolio 2025</div>
-          <h1>Robotics & Cybersecurity Educator</h1>
-          <p class="lede">Building real projects with real students — and learning right alongside them.</p>
+          <h1>Robotics Educator & Security Researcher</h1>
+          <p class="lede">Building real projects with real students - and learning right alongside them.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#work">View projects</a>
             <a class="btn ghost" href="#contact">Get in touch</a>
@@ -72,7 +76,7 @@ title: Gh0stlyKn1ght | Portfolio
         <div class="hero-card">
           <div class="pulse"></div>
           <div class="card-head">Now</div>
-          <p>New Jersey-based CS & robotics teacher, FIRST mentor, and cybersecurity learner documenting the journey.</p>
+          <p>New Jersey-based CS & robotics teacher, FIRST mentor, and security researcher documenting the journey.</p>
           <ul class="pill-list">
             <li>Robotics & fabrication</li>
             <li>Web app security</li>
@@ -91,41 +95,12 @@ title: Gh0stlyKn1ght | Portfolio
       </div>
     </section>
 
-    <section id="stack" class="section">
-      <div class="container">
-        <div class="theme-panel">
-          <div class="beam"></div>
-          <div class="theme-badge">Jekyll · 24k Neon</div>
-          <h2 style="margin-top:12px;">What each option really means for you</h2>
-          <p class="lede">Jekyll keeps it lean: Markdown in, HTML out. Perfect for shipping research posts, writeups, course pages, and all the robotics/cyber thinking without hand-building layouts each time.</p>
-          <div class="theme-grid" style="margin-top:16px;">
-            <div class="highlight">
-              <div class="mini-title">Static, steady</div>
-              <p>Zero backend to babysit. Push to GitHub Pages and let the CDN handle it.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Fits your plate</div>
-              <p>You’re teaching full-time with three parallel empires forming. Jekyll lets you post fast and keep momentum.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Markdown-first</div>
-              <p>Draft in Markdown, publish in minutes. Perfect for course updates or lab notes.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Future-proof</div>
-              <p>Clean HTML, no runtime lock-in. You can redesign the shell without rewriting content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="about" class="section">
       <div class="container two-col">
         <div>
           <div class="eyebrow">About</div>
           <h2>Hands-on teaching, no hype.</h2>
-          <p>I’m Gh0stlyKn1ght, a New Jersey-based CS & robotics teacher, FIRST Robotics mentor, and cybersecurity learner. Most days, I’m helping students build things that move, sense, think, and sometimes break in interesting ways. We wire circuits, debug code, run security labs, and ask better questions about how technology actually works.</p>
+          <p>I’m Gh0stlyKn1ght, a New Jersey-based CS & robotics teacher, FIRST Robotics mentor, and security researcher. Most days, I’m helping students build things that move, sense, think, and sometimes break in interesting ways. We wire circuits, debug code, run security labs, and ask better questions about how technology actually works.</p>
           <p>Outside the classroom, I study autonomous systems security: robotics, drones, embedded systems, and the intersection of AI and safety. I document the journey here — steady, honest, and focused on real progress.</p>
           <div class="highlight-grid">
             <div class="highlight">
@@ -202,7 +177,7 @@ title: Gh0stlyKn1ght | Portfolio
       </div>
 
       <div class="container card-grid">
-        <article class="card project">
+        <article class="card project accent-cyan">
           <div class="card-top">
             <div class="pill">2025</div>
             <div class="tag">Security tool</div>
@@ -220,7 +195,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-green">
           <div class="card-top">
             <div class="pill">2025</div>
             <div class="tag">Platform</div>
@@ -238,7 +213,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-pink">
           <div class="card-top">
             <div class="pill">2024</div>
             <div class="tag">CLI</div>
@@ -256,7 +231,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-yellow">
           <div class="card-top">
             <div class="pill">Active</div>
             <div class="tag">Pentesting</div>
@@ -273,7 +248,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-green">
           <div class="card-top">
             <div class="pill">2024</div>
             <div class="tag">Research</div>
@@ -290,7 +265,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-cyan">
           <div class="card-top">
             <div class="pill">2024</div>
             <div class="tag">Web</div>
@@ -307,7 +282,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-pink">
           <div class="card-top">
             <div class="pill">Planned</div>
             <div class="tag">Robotics Sec</div>
@@ -324,7 +299,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-yellow">
           <div class="card-top">
             <div class="pill">2024</div>
             <div class="tag">Infra</div>
@@ -341,7 +316,7 @@ title: Gh0stlyKn1ght | Portfolio
           </div>
         </article>
 
-        <article class="card project">
+        <article class="card project accent-green">
           <div class="card-top">
             <div class="pill">2024</div>
             <div class="tag">Debugging</div>
@@ -465,28 +440,26 @@ title: Gh0stlyKn1ght | Portfolio
     </section>
   </main>
 
-  <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <div class="brand-name">Gh0stlyKn1ght</div>
-          <p>Engineering thoughtful experiences and labs with a bias toward action.</p>
-          <p class="footer-edu">B.S. Cybersecurity — Bellevue University · MBA Candidate — Rutgers University (2026)</p>
-          <p class="footer-edu">Full-time CS/Robotics Educator · Latest refresh: 2025</p>
-          <p class="footer-edu">If you have a robotics, security, or education project worth exploring — or just want to trade ideas — reach out.</p>
-        </div>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#work">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-meta">
-        <div class="pill">Always shipping</div>
-        <div>Last updated 2025</div>
-      </div>
+<footer class="footer">
+  <div class="container footer-bar">
+    <div class="footer-copy">© 2025 Gh0stlyKn1ght</div>
+    <div class="footer-links">
+      <a class="icon-link" href="https://linkedin.com/in/john-n-09aa1b5b" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4Zm-9 18H7V9h4v9Zm-2-10.3c-1 0-1.8-.8-1.8-1.7S8 4.3 9 4.3s1.8.8 1.8 1.7S10 7.7 9 7.7Zm11 10.3h-4v-5.2c0-1.2 0-2.8-1.8-2.8s-2.1 1.4-2.1 2.7V18h-4V9h3.8v1.2H12c.5-.9 1.7-1.8 3.5-1.8c3.7 0 4.4 2.4 4.4 5.4V18Z"/>
+        </svg>
+      </a>
+      <a class="icon-link" href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94c.58.1.79-.25.79-.56c0-.28-.01-1.02-.02-2c-3.2.7-3.88-1.54-3.88-1.54c-.53-1.35-1.3-1.71-1.3-1.71c-1.06-.72.08-.71.08-.71c1.17.08 1.78 1.2 1.78 1.2c1.04 1.79 2.73 1.27 3.4.97c.1-.75.41-1.27.74-1.56c-2.55-.29-5.23-1.28-5.23-5.69c0-1.26.45-2.29 1.19-3.1c-.12-.29-.52-1.45.11-3.02c0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18c.64 1.57.24 2.73.12 3.02c.74.81 1.18 1.84 1.18 3.1c0 4.42-2.68 5.39-5.24 5.67c.42.36.8 1.1.8 2.22c0 1.6-.02 2.88-.02 3.28c0 .31.21.66.8.55C20.22 21.4 23.5 17.1 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="{{ '/script.js' | relative_url }}"></script>
 </body>
 </html>
+
+
