@@ -1,0 +1,132 @@
+---
+layout: null
+title: Project 03 | ROS2 Basics + Networking
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 03 | ROS2 Basics + Networking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+  <div class="beam" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-top" aria-hidden="true"></div>
+  <div class="glow glow-bottom" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <div>
+          <a class="brand-name" href="{{ '/' | relative_url }}">Gh0stlyKn1ght</a>
+          <div class="brand-sub">
+            <span class="sub-accent sub-blue">Robotics</span>
+            <span class="sub-sep">•</span>
+            <span class="sub-accent sub-red">Security</span>
+            <span class="sub-sep">•</span>
+            <span class="sub-accent sub-pink">Autonomy</span>
+          </div>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="{{ '/#about' | relative_url }}">About</a>
+        <a href="{{ '/#work' | relative_url }}">Projects</a>
+        <a href="{{ '/#skills' | relative_url }}">Skills</a>
+        <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+        <a class="active" href="{{ '/research/phase-1' | relative_url }}">Research Log</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Phase 1 · Project 03</div>
+          <h1>ROS2 Basics + Networking</h1>
+          <p class="lede">Time to get fluent with ROS2 networking: nodes, topics, services, DDS traffic, and how to see what’s really happening. I want to be confident before layering more autonomy.</p>
+        </div>
+        <div class="callout">
+          <p style="margin:0;"><a class="ghost-link" href="{{ '/research/phase-1' | relative_url }}">← Phase 1 Research Log</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card-wrapper">
+        <article class="card project-card">
+          <div class="card-header">
+            <div class="pill">Plan</div>
+            <div class="tag" style="color: var(--accent-2);">Scope</div>
+          </div>
+          <div class="card-columns">
+            <div class="section-block">
+              <div class="section-title">What I'm focusing on</div>
+              <ul class="bullet-list">
+                <li>Nodes, topics, services</li>
+                <li>rqt_graph, ros2 topic echo, ros2 bag</li>
+                <li>DDS traffic fundamentals</li>
+                <li>Simple message spoofing in simulation</li>
+                <li>Observability (what’s happening under the hood)</li>
+              </ul>
+            </div>
+            <div class="section-block">
+              <div class="section-title">Cost</div>
+              <p>$75–100</p>
+              <div class="section-title">Why it matters</div>
+              <p>ROS2 is the backbone for the rest of my work. If I can see and shape the network layer, I can debug and secure everything else.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="card-header">
+            <div class="pill">Logs</div>
+            <div class="tag" style="color: var(--accent);">Planned</div>
+          </div>
+          <div class="section-block">
+            <details class="collapsible">
+              <summary class="section-title">Log 1: ROS2 environment setup + first nodes</summary>
+              <p>Capture my setup, first nodes, and topic echoes. Keep the screenshots so I can spot regressions later.</p>
+            </details>
+            <details class="collapsible">
+              <summary class="section-title">Log 2: DDS inspection + replay/spoofing experiment</summary>
+              <p>Inspect DDS traffic and try a small replay/spoof in sim. Note what alarms, what’s quiet, and how I’d harden it.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bar">
+      <div class="footer-copy">c 2025 Gh0stlyKn1ght</div>
+      <div class="footer-links">
+        <a class="icon-link" href="https://linkedin.com/in/john-n-09aa1b5b" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4Zm-9 18H7V9h4v9Zm-2-10.3c-1 0-1.8-.8-1.8-1.7S8 4.3 9 4.3s1.8.8 1.8 1.7S10 7.7 9 7.7Zm11 10.3h-4v-5.2c0-1.2 0-2.8-1.8-2.8s-2.1 1.4-2.1 2.7V18h-4V9h3.8v1.2H12c.5-.9 1.7-1.8 3.5-1.8c3.7 0 4.4 2.4 4.4 5.4V18Z"/>
+        </svg>
+        </a>
+        <a class="icon-link" href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94c.58.1.79-.25.79-.56c0-.28-.01-1.02-.02-2c-3.2.7-3.88-1.54-3.88-1.54c-.53-1.35-1.3-1.71-1.3-1.71c-1.06-.72.08-.71.08-.71c1.17.08 1.78 1.2 1.78 1.2c1.04 1.79 2.73 1.27 3.4.97c.1-.75.41-1.27.74-1.56c-2.55-.29-5.23-1.28-5.23-5.69c0-1.26.45-2.29 1.19-3.1c-.12-.29-.52-1.45.11-3.02c0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18c.64 1.57.24 2.73.12 3.02c.74.81 1.18 1.84 1.18 3.1c0 4.42-2.68 5.39-5.24 5.67c.42.36.8 1.1.8 2.22c0 1.6-.02 2.88-.02 3.28c0 .31.21.66.8.55C20.22 21.4 23.5 17.1 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>

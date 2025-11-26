@@ -548,6 +548,19 @@ a:hover {
   text-decoration: none;
 }
 
+.project-section {
+  position: relative;
+}
+
+.project-card-link {
+  cursor: pointer;
+}
+
+.project-card-link:hover {
+  border-color: rgba(37, 214, 245, 0.25);
+  background: linear-gradient(180deg, rgba(37, 214, 245, 0.08), rgba(19, 26, 43, 0.7));
+}
+
 .card-wrapper {
   width: min(85%, 1080px);
   margin: 0 auto;
