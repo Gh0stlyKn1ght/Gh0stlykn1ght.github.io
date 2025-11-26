@@ -525,30 +525,6 @@ a:hover {
   margin-top: 24px;
 }
 
-#pillars .card {
-  min-height: 320px;
-}
-
-#pillars .card:nth-child(1) .card-top .pill,
-#pillars .card:nth-child(1) .tag {
-  color: #25d6f5;
-}
-
-#pillars .card:nth-child(2) .card-top .pill,
-#pillars .card:nth-child(2) .tag {
-  color: #25d366;
-}
-
-#pillars .card:nth-child(3) .card-top .pill,
-#pillars .card:nth-child(3) .tag {
-  color: #ff8ad4;
-}
-
-#pillars .card:nth-child(4) .card-top .pill,
-#pillars .card:nth-child(4) .tag {
-  color: #f7768e;
-}
-
 .card-stack {
   display: flex;
   flex-direction: column;
@@ -572,33 +548,6 @@ a:hover {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.project-section {
-  position: relative;
-}
-
-.project-card-link {
-  cursor: pointer;
-}
-
-.project-card-link:hover {
-  border-color: rgba(37, 214, 245, 0.25);
-  background: linear-gradient(180deg, rgba(37, 214, 245, 0.08), rgba(19, 26, 43, 0.7));
-}
-
-.phase-projects .project-card p,
-#phase-projects .project-card p {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-=======
->>>>>>> parent of 232b0ea (updates)
-=======
->>>>>>> parent of 232b0ea (updates)
 .card-wrapper {
   width: min(85%, 1080px);
   margin: 0 auto;
@@ -733,7 +682,7 @@ a:hover {
 }
 
 .phase-card.locked {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .phase-card.locked:hover {
@@ -741,18 +690,13 @@ a:hover {
 }
 
 .phase-card.locked .phase-body {
-  filter: blur(2px);
+  filter: blur(0.6px);
 }
 
 .phase-card.locked .btn {
   pointer-events: none;
   cursor: not-allowed;
 }
-
-.phase-card.locked .phase-actions {
-  position: relative;
-}
-
 
 .bullet-list {
   margin: 8px 0 14px;
