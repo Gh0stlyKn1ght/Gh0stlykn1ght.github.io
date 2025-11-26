@@ -572,6 +572,7 @@ a:hover {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .project-section {
   position: relative;
 }
@@ -593,6 +594,8 @@ a:hover {
   overflow: hidden;
 }
 
+=======
+>>>>>>> parent of 232b0ea (updates)
 .card-wrapper {
   width: min(85%, 1080px);
   margin: 0 auto;

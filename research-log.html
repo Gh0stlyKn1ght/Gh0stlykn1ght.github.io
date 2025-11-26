@@ -1,7 +1,6 @@
 ---
 layout: null
 title: Gh0stlyKn1ght | Research Log
-permalink: /research/phase-1
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -40,10 +39,18 @@ permalink: /research/phase-1
       </button>
       <nav class="nav">
         <a href="{{ '/#about' | relative_url }}">About</a>
+<<<<<<< HEAD
         <a href="{{ '/#roadmap' | relative_url }}">Roadmap</a>
         <a href="{{ '/#phase-projects' | relative_url }}">Phase 1 Projects</a>
         <a href="{{ '/#tools' | relative_url }}">Tools</a>
         <a class="active" href="{{ '/research/phase-1' | relative_url }}">Research Log</a>
+=======
+        <a href="{{ '/#work' | relative_url }}">Projects</a>
+        <a href="{{ '/#skills' | relative_url }}">Skills</a>
+        <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+        <a class="active" href="{{ '/research-log' | relative_url }}">Research Log</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+>>>>>>> parent of 232b0ea (updates)
       </nav>
     </div>
   </header>
@@ -72,178 +79,170 @@ permalink: /research/phase-1
         </div>
       </div>
       <div class="container card-wrapper card-stack">
-        <section id="project-01" class="project-section">
-          <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-01' | relative_url }}">
-            <div class="project-badge">01</div>
-            <div class="card-content">
-              <div class="card-header">
-                <div class="pill">Project 01</div>
-                <div class="tag">Autonomous Rover Foundations</div>
+        <article class="card project-card">
+          <div class="project-badge">01</div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="pill">Project 01</div>
+              <div class="tag">Autonomous Rover Foundations</div>
+            </div>
+            <div class="card-columns">
+              <div class="section-block">
+                <div class="section-title">Purpose</div>
+                <p>Learn how robots behave in the real world before moving into ROS2, perception, or drones.</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">What you’ll cover</summary>
+                  <ul class="bullet-list">
+                    <li>Motors, sensors, microcontrollers</li>
+                    <li>PID basics (drift, overshoot, tuning)</li>
+                    <li>Line following or waypoint navigation</li>
+                    <li>Simple autonomy logic</li>
+                    <li>Real failure modes (slip, jitter, battery sag)</li>
+                  </ul>
+                </details>
               </div>
-              <div class="card-columns">
-                <div class="section-block">
-                  <div class="section-title">Purpose</div>
-                  <p>Learn how robots behave in the real world before moving into ROS2, perception, or drones.</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">What you’ll cover</summary>
-                    <ul class="bullet-list">
-                      <li>Motors, sensors, microcontrollers</li>
-                      <li>PID basics (drift, overshoot, tuning)</li>
-                      <li>Line following or waypoint navigation</li>
-                      <li>Simple autonomy logic</li>
-                      <li>Real failure modes (slip, jitter, battery sag)</li>
-                    </ul>
-                  </details>
-                </div>
-                <div class="section-block">
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Logs</summary>
-                    <ul class="bullet-list">
-                      <li>Log 1: Rover build + baseline behavior</li>
-                      <li>Log 2: PID experiments + resulting drift</li>
-                      <li>Log 3: Navigation test + failures + insights</li>
-                    </ul>
-                  </details>
-                  <div class="section-title" style="color: var(--accent-2);">Cost</div>
-                  <p>$65–150</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Why it matters</summary>
-                    <p>Nearly all autonomous systems start here — even self-driving car engineers.</p>
-                  </details>
-                </div>
+              <div class="section-block">
+                <details class="section-block collapsible">
+                  <summary class="section-title">Logs</summary>
+                  <ul class="bullet-list">
+                    <li>Log 1: Rover build + baseline behavior</li>
+                    <li>Log 2: PID experiments + resulting drift</li>
+                    <li>Log 3: Navigation test + failures + insights</li>
+                  </ul>
+                </details>
+                <div class="section-title" style="color: var(--accent-2);">Cost</div>
+                <p>$65–150</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">Why it matters</summary>
+                  <p>Nearly all autonomous systems start here — even self-driving car engineers.</p>
+                </details>
               </div>
             </div>
-          </a>
-        </section>
+          </div>
+        </article>
 
-        <section id="project-02" class="project-section">
-          <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-02' | relative_url }}">
-            <div class="project-badge">02</div>
-            <div class="card-content">
-              <div class="card-header">
-                <div class="pill">Project 02</div>
-                <div class="tag" style="color: var(--accent-3);">Embedded Security Workflow</div>
+        <article class="card project-card">
+          <div class="project-badge">02</div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="pill">Project 02</div>
+              <div class="tag" style="color: var(--accent-3);">Embedded Security Workflow</div>
+            </div>
+            <div class="card-columns">
+              <div class="section-block">
+                <div class="section-title">Purpose</div>
+                <p>Build early habits analyzing firmware and low-level access.</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">What you’ll cover</summary>
+                  <ul class="bullet-list">
+                    <li>Reading firmware</li>
+                    <li>Serial communication inspection</li>
+                    <li>Basic fuzzing</li>
+                    <li>Simple attack surfaces (overflow, logic abuse)</li>
+                    <li>What a “secure microcontroller workflow” looks like</li>
+                  </ul>
+                </details>
               </div>
-              <div class="card-columns">
-                <div class="section-block">
-                  <div class="section-title">Purpose</div>
-                  <p>Build early habits analyzing firmware and low-level access.</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">What you’ll cover</summary>
-                    <ul class="bullet-list">
-                      <li>Reading firmware</li>
-                      <li>Serial communication inspection</li>
-                      <li>Basic fuzzing</li>
-                      <li>Simple attack surfaces (overflow, logic abuse)</li>
-                      <li>What a “secure microcontroller workflow” looks like</li>
-                    </ul>
-                  </details>
-                </div>
-                <div class="section-block">
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Logs</summary>
-                    <ul class="bullet-list">
-                      <li>Log 1: Firmware extraction + tooling</li>
-                      <li>Log 2: Serial behavior + fuzz tests</li>
-                    </ul>
-                  </details>
-                  <div class="section-title" style="color: var(--accent-4);">Cost</div>
-                  <p>$25–50</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Why it matters</summary>
-                    <p>This is Phase 4 in miniature — embedded systems are the beating heart of robots and drones.</p>
-                  </details>
-                </div>
+              <div class="section-block">
+                <details class="section-block collapsible">
+                  <summary class="section-title">Logs</summary>
+                  <ul class="bullet-list">
+                    <li>Log 1: Firmware extraction + tooling</li>
+                    <li>Log 2: Serial behavior + fuzz tests</li>
+                  </ul>
+                </details>
+                <div class="section-title" style="color: var(--accent-4);">Cost</div>
+                <p>$25–50</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">Why it matters</summary>
+                  <p>This is Phase 4 in miniature — embedded systems are the beating heart of robots and drones.</p>
+                </details>
               </div>
             </div>
-          </a>
-        </section>
+          </div>
+        </article>
 
-        <section id="project-03" class="project-section">
-          <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-03' | relative_url }}">
-            <div class="project-badge">03</div>
-            <div class="card-content">
-              <div class="card-header">
-                <div class="pill">Project 03</div>
-                <div class="tag" style="color: var(--accent-2);">ROS2 Basics + Networking</div>
+        <article class="card project-card">
+          <div class="project-badge">03</div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="pill">Project 03</div>
+              <div class="tag" style="color: var(--accent-2);">ROS2 Basics + Networking</div>
+            </div>
+            <div class="card-columns">
+              <div class="section-block">
+                <div class="section-title">Purpose</div>
+                <p>Learn how modern robotics systems communicate.</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">What you’ll cover</summary>
+                  <ul class="bullet-list">
+                    <li>Nodes, topics, services</li>
+                    <li>rqt_graph, ros2 topic echo, ros2 bag</li>
+                    <li>DDS traffic fundamentals</li>
+                    <li>Simple message spoofing in simulation</li>
+                    <li>Observability (what’s happening under the hood)</li>
+                  </ul>
+                </details>
               </div>
-              <div class="card-columns">
-                <div class="section-block">
-                  <div class="section-title">Purpose</div>
-                  <p>Learn how modern robotics systems communicate.</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">What you’ll cover</summary>
-                    <ul class="bullet-list">
-                      <li>Nodes, topics, services</li>
-                      <li>rqt_graph, ros2 topic echo, ros2 bag</li>
-                      <li>DDS traffic fundamentals</li>
-                      <li>Simple message spoofing in simulation</li>
-                      <li>Observability (what’s happening under the hood)</li>
-                    </ul>
-                  </details>
-                </div>
-                <div class="section-block">
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Logs</summary>
-                    <ul class="bullet-list">
-                      <li>Log 1: ROS2 environment setup + first nodes</li>
-                      <li>Log 2: DDS inspection + replay/spoofing experiment</li>
-                    </ul>
-                  </details>
-                  <div class="section-title" style="color: var(--accent);">Cost</div>
-                  <p>$75–100</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Why it matters</summary>
-                    <p>This is the core of future robotics, drones, and autonomous systems.</p>
-                  </details>
-                </div>
+              <div class="section-block">
+                <details class="section-block collapsible">
+                  <summary class="section-title">Logs</summary>
+                  <ul class="bullet-list">
+                    <li>Log 1: ROS2 environment setup + first nodes</li>
+                    <li>Log 2: DDS inspection + replay/spoofing experiment</li>
+                  </ul>
+                </details>
+                <div class="section-title" style="color: var(--accent);">Cost</div>
+                <p>$75–100</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">Why it matters</summary>
+                  <p>This is the core of future robotics, drones, and autonomous systems.</p>
+                </details>
               </div>
             </div>
-          </a>
-        </section>
+          </div>
+        </article>
 
-        <section id="project-04" class="project-section">
-          <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-04' | relative_url }}">
-            <div class="project-badge">04</div>
-            <div class="card-content">
-              <div class="card-header">
-                <div class="pill">Project 04</div>
-                <div class="tag" style="color: var(--accent-3);">UAV Ground School (Simulation)</div>
+        <article class="card project-card">
+          <div class="project-badge">04</div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="pill">Project 04</div>
+              <div class="tag" style="color: var(--accent-3);">UAV Ground School (Simulation)</div>
+            </div>
+            <div class="card-columns">
+              <div class="section-block">
+                <div class="section-title">Purpose</div>
+                <p>Learn drone logic safely and cheaply.</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">What you’ll cover</summary>
+                  <ul class="bullet-list">
+                    <li>ArduPilot SITL</li>
+                    <li>Mission planning</li>
+                    <li>GPS loss simulation</li>
+                    <li>Failsafe behavior</li>
+                    <li>Telemetry protocol basics (MAVLink)</li>
+                  </ul>
+                </details>
               </div>
-              <div class="card-columns">
-                <div class="section-block">
-                  <div class="section-title">Purpose</div>
-                  <p>Learn drone logic safely and cheaply.</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">What you’ll cover</summary>
-                    <ul class="bullet-list">
-                      <li>ArduPilot SITL</li>
-                      <li>Mission planning</li>
-                      <li>GPS loss simulation</li>
-                      <li>Failsafe behavior</li>
-                      <li>Telemetry protocol basics (MAVLink)</li>
-                    </ul>
-                  </details>
-                </div>
-                <div class="section-block">
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Logs</summary>
-                    <ul class="bullet-list">
-                      <li>Log 1: SITL setup + first autonomous mission</li>
-                      <li>Log 2: GPS-loss failsafe experiment</li>
-                    </ul>
-                  </details>
-                  <div class="section-title" style="color: var(--accent-4);">Cost</div>
-                  <p>$0 (simulation only) or $60–80 if you later buy a Pixhawk to experiment offline</p>
-                  <details class="section-block collapsible">
-                    <summary class="section-title">Why it matters</summary>
-                    <p>UAVs are a prime research testbed for autonomy, safety, and real-world system reliability.</p>
-                  </details>
-                </div>
+              <div class="section-block">
+                <details class="section-block collapsible">
+                  <summary class="section-title">Logs</summary>
+                  <ul class="bullet-list">
+                    <li>Log 1: SITL setup + first autonomous mission</li>
+                    <li>Log 2: GPS-loss failsafe experiment</li>
+                  </ul>
+                </details>
+                <div class="section-title" style="color: var(--accent-4);">Cost</div>
+                <p>$0 (simulation only) or $60–80 if you later buy a Pixhawk to experiment offline</p>
+                <details class="section-block collapsible">
+                  <summary class="section-title">Why it matters</summary>
+                  <p>UAVs are a prime research testbed for autonomy, safety, and real-world system reliability.</p>
+                </details>
               </div>
             </div>
-          </a>
-        </section>
+          </div>
+        </article>
       </div>
     </section>
   </main>
