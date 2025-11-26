@@ -525,6 +525,30 @@ a:hover {
   margin-top: 24px;
 }
 
+#pillars .card {
+  min-height: 320px;
+}
+
+#pillars .card:nth-child(1) .card-top .pill,
+#pillars .card:nth-child(1) .tag {
+  color: #25d6f5;
+}
+
+#pillars .card:nth-child(2) .card-top .pill,
+#pillars .card:nth-child(2) .tag {
+  color: #25d366;
+}
+
+#pillars .card:nth-child(3) .card-top .pill,
+#pillars .card:nth-child(3) .tag {
+  color: #ff8ad4;
+}
+
+#pillars .card:nth-child(4) .card-top .pill,
+#pillars .card:nth-child(4) .tag {
+  color: #f7768e;
+}
+
 .card-stack {
   display: flex;
   flex-direction: column;
@@ -559,6 +583,14 @@ a:hover {
 .project-card-link:hover {
   border-color: rgba(37, 214, 245, 0.25);
   background: linear-gradient(180deg, rgba(37, 214, 245, 0.08), rgba(19, 26, 43, 0.7));
+}
+
+.phase-projects .project-card p,
+#phase-projects .project-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-wrapper {
@@ -715,23 +747,6 @@ a:hover {
   position: relative;
 }
 
-.phase-card.locked .phase-actions::after {
-  content: "Unlocks after Phase 1 is complete.";
-  position: absolute;
-  left: 0;
-  bottom: -24px;
-  font-size: 12px;
-  color: var(--muted);
-  opacity: 0;
-  transform: translateY(4px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: none;
-}
-
-.phase-card.locked:hover .phase-actions::after {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .bullet-list {
   margin: 8px 0 14px;

@@ -24,11 +24,11 @@ title: Gh0stlyKn1ght | Portfolio
       <div class="brand">
         <div>
           <a class="brand-name" href="{{ '/' | relative_url }}">Gh0stlyKn1ght</a>
-          <div class="brand-sub">
+                              <div class="brand-sub">
             <span class="sub-accent sub-blue">Robotics</span>
-            <span class="sub-sep">·</span>
+            <span class="sub-sep">&bull;</span>
             <span class="sub-accent sub-red">Security</span>
-            <span class="sub-sep">·</span>
+            <span class="sub-sep">&bull;</span>
             <span class="sub-accent sub-pink">Autonomy</span>
           </div>
         </div>
@@ -37,12 +37,12 @@ title: Gh0stlyKn1ght | Portfolio
         <span></span>
         <span></span>
       </button>
-      <nav class="nav">
+            <nav class="nav">
         <a href="#about" data-target="about">About</a>
-        <a href="#work" data-target="work">Projects</a>
-        <a href="#skills" data-target="skills">Skills</a>
-        <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
-        <a href="#contact" data-target="contact">Contact</a>
+        <a href="#roadmap" data-target="roadmap">Roadmap</a>
+        <a href="#phase-projects" data-target="phase-projects">Phase 1 Projects</a>
+        <a href="#tools" data-target="tools">Tools</a>
+        <a href="{{ '/research/phase-1' | relative_url }}">Research Log</a>
       </nav>
     </div>
   </header>
@@ -54,13 +54,13 @@ title: Gh0stlyKn1ght | Portfolio
           <div class="eyebrow">Gh0stlyKn1ght</div>
           <h1>Robotics Educator & Security Researcher</h1>
           <div class="quote-block">
-            <p class="quote-text">“This is our world now… the world of the electron and the switch.”</p>
-            <p class="quote-cite">— <em>The Hacker Manifesto</em> (1986)</p>
+            <p class="quote-text">&ldquo;This is our world now... the world of the electron and the switch.&rdquo;</p>
+            <p class="quote-cite">&mdash; <em>The Hacker Manifesto</em> (1986)</p>
           </div>
-          <p class="lede">I’m exploring autonomous systems from the ground up — robotics basics, embedded security, AI, and UAV experimentation. This site is my logbook: what I try, what I break, what I learn, and where the research takes me.</p>
+          <p class="lede">I'm exploring autonomous systems from the ground up — robotics basics, embedded security, AI, and UAV experimentation. This site is my logbook: what I try, what I break, what I learn, and where the research takes me.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#work">View projects</a>
-            <a class="btn ghost" href="#contact">Get in touch</a>
+            <a class="btn primary" href="#roadmap">View roadmap</a>
+            <a class="btn ghost" href="{{ '/about' | relative_url }}">About me</a>
           </div>
           <div class="stats">
             <div class="stat">
@@ -93,366 +93,163 @@ title: Gh0stlyKn1ght | Portfolio
             </div>
             <pre><code>$ npm run ship
 > robotics lab ready...
-✓ students hacking & learning</code></pre>
+� students hacking & learning</code></pre>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
+      <div class="container">
+        <div class="eyebrow">About</div>
+        <h2>Who I am</h2>
+        <p>I’m Gh0stlyKn1ght, a CS & robotics teacher, FIRST Robotics mentor, and security learner based in New Jersey. I help students build things that move, sense, and think—and dig into how technology actually works. Outside the classroom I’m developing my skills in autonomous systems security: robotics, drones, embedded systems, and the intersection of AI and safety. This site documents that journey: steady, honest, and focused on real progress.</p>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Phase roadmap</div>
+          <h2>Phases 1–4</h2>
+        </div>
+      </div>
+      <div class="container card-grid">
+        <article class="card phase-card">
+          <div class="card-top"><div class="pill">Phase 1</div><div class="tag">Foundations · Active</div></div>
+          <h3>Now - 6 months</h3>
+          <div class="phase-body">
+            <p>Deepen robotics fundamentals; Arduino and embedded security basics; small autonomous ground vehicles; ROS2 networking and introspection; UAV hardware and telemetry fundamentals; introductory computer vision modules; firmware and sensor-level analysis workflows.</p>
+          </div>
+          <div class="phase-actions">
+            <a class="btn primary small" href="{{ '/research/phase-1' | relative_url }}">View Research Log</a>
+          </div>
+        </article>
+        <article class="card phase-card locked">
+          <div class="card-top"><div class="pill">Phase 2</div><div class="tag">Applied · Locked</div><span class="lock-icon" aria-hidden="true">🔒</span></div>
+          <h3>6-18 months</h3>
+          <div class="phase-body">
+            <p>Autonomous navigation, drone control/telemetry testing, CV to action pipeline, adversarial AI cases, robotics curriculum + security labs, ROS2 exploitation research.</p>
+          </div>
+          <div class="phase-actions">
+            <span class="btn ghost small" aria-disabled="true">Locked (Coming Soon)</span>
+          </div>
+        </article>
+        <article class="card phase-card locked">
+          <div class="card-top"><div class="pill">Phase 3</div><div class="tag">UAV Security · Locked</div><span class="lock-icon" aria-hidden="true">🔒</span></div>
+          <h3>1-3 years</h3>
+          <div class="phase-body">
+            <p>GPS spoofing lab, failsafe testing, firmware extraction/mod, LIDAR spoofing, secure ROS2 deployments, FRC autonomous path security.</p>
+          </div>
+          <div class="phase-actions">
+            <span class="btn ghost small" aria-disabled="true">Locked (Coming Soon)</span>
+          </div>
+        </article>
+        <article class="card phase-card locked">
+          <div class="card-top"><div class="pill">Phase 4</div><div class="tag">The Empire · Locked</div><span class="lock-icon" aria-hidden="true">🔒</span></div>
+          <h3>3-5 years</h3>
+          <div class="phase-body">
+            <p>Advanced study in autonomous systems security, curriculum expansion, specialized research initiatives, selective publishing, and deeper engagement with the global robotics/security community.</p>
+          </div>
+          <div class="phase-actions">
+            <span class="btn ghost small" aria-disabled="true">Locked (Coming Soon)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="phase-projects" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Phase 1 projects</div>
+          <h2>Hands-on builds for the foundations.</h2>
+        </div>
+      </div>
+      <div class="container card-grid">
+        <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-01' | relative_url }}">
+          <div class="card-top"><div class="pill">Project 01</div><div class="tag">Autonomous Rover Foundations</div></div>
+          <p>Learn how robots behave in the real world before moving into ROS2, perception, or drones.</p>
+        </a>
+        <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-02' | relative_url }}">
+          <div class="card-top"><div class="pill">Project 02</div><div class="tag">Embedded Security Workflow</div></div>
+          <p>Build early habits analyzing firmware and low-level access with Arduino/ESP32 workflows.</p>
+        </a>
+        <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-03' | relative_url }}">
+          <div class="card-top"><div class="pill">Project 03</div><div class="tag">ROS2 Basics + Networking</div></div>
+          <p>Learn how modern robotics systems communicate: nodes, topics, services, and DDS traffic.</p>
+        </a>
+        <a class="card project-card project-card-link" href="{{ '/research/phase-1/project-04' | relative_url }}">
+          <div class="card-top"><div class="pill">Project 04</div><div class="tag">UAV Ground School</div></div>
+          <p>Learn drone logic safely in sim: ArduPilot SITL, mission planning, GPS-loss drills, failsafes, MAVLink basics.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="pillars" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Pillars</div>
+          <h2>Focus areas I’m building toward.</h2>
+        </div>
+      </div>
+      <div class="container card-grid">
+        <article class="card">
+          <div class="card-top"><div class="pill">Pillar 01</div><div class="tag">Robotics</div></div>
+          <h3>Robotics & Embedded Systems</h3>
+          <p>Circuits, sensors, microcontrollers, control loops, and dependable builds that can be tested and observed.</p>
+        </article>
+        <article class="card">
+          <div class="card-top"><div class="pill">Pillar 02</div><div class="tag">AI</div></div>
+          <h3>Applied AI & Perception</h3>
+          <p>Computer vision, tracking, planning, and lightweight reasoning on edge devices with safety in mind.</p>
+        </article>
+        <article class="card">
+          <div class="card-top"><div class="pill">Pillar 03</div><div class="tag">UAS</div></div>
+          <h3>Unmanned Aerial Systems</h3>
+          <p>Flight control, telemetry, failsafes, mission logic, and simulation-first testing for reliability.</p>
+        </article>
+        <article class="card">
+          <div class="card-top"><div class="pill">Pillar 04</div><div class="tag">Security</div></div>
+          <h3>Cybersecurity of Autonomous Systems</h3>
+          <p>ROS2/DDS hardening, firmware analysis, telemetry integrity, spoofing defenses, and fault injection for resilience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container section-header">
+        <div>
+          <div class="eyebrow">Tools</div>
+        </div>
+      </div>
       <div class="container two-col">
         <div>
-          <div class="eyebrow">About</div>
-          <h2>Hands-on teaching, no hype.</h2>
-          <p>I'm Gh0stlyKn1ght, a New Jersey-based CS & robotics teacher, FIRST Robotics mentor, and security researcher. Most days, I'm helping students build things that move, sense, think, and sometimes break in interesting ways. We wire circuits, debug code, run security labs, and ask better questions about how technology actually works.</p>
-          <p>Outside the classroom, I study autonomous systems security: robotics, drones, embedded systems, and the intersection of AI and safety. I document the journey here - steady, honest, and focused on real progress.</p>
-          <div class="highlight-grid">
-            <div class="highlight">
-              <div class="mini-title">Educator-engineer</div>
-              <p>Full-year learning paths across robotics, cyber, and engineering; every project maps to real tech careers.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Systems-first</div>
-              <p>Design reusable components and labs so students can explore safely without losing rigor.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Security-forward</div>
-              <p>Specialty in web app security and ethical hacking-teaching why systems break and how to build safer ones.</p>
-            </div>
-            <div class="highlight">
-              <div class="mini-title">Tools & platforms</div>
-              <p>Tinkercad, VEXcode, Arduino, Khan Academy, Code.org, digital fabrication, and competition-ready builds.</p>
-            </div>
-          </div>
-        </div>
-        <div class="callout">
-          <div class="callout-label">What I'm aiming for</div>
-          <ul>
-            <li>Deliver purposeful experiences, not just features.</li>
-            <li>Keep a tight feedback loop between build → learn → refine.</li>
-            <li>Bridge cyber, robotics, and fabrication into accessible curricula.</li>
-            <li>Mentor young builders, hackers, and creators into confident engineers.</li>
-            <li>Live the mantra: "Smarter, not harder." Favorite quote: "HACK THE PLANET!"</li>
+          <ul class="pill-list">
+            <li>Arduino</li>
+            <li>VEXcode</li>
+            <li>Tinkercad Circuits</li>
+            <li>Microcontrollers (basics)</li>
+            <li>Python (basic teaching use)</li>
+            <li>Electronics tools (breadboards, meters, wiring)</li>
+            <li>Nothing exaggerated. Nothing future-looking. Everything real.</li>
           </ul>
-          <div class="highlight" style="margin-top:14px;">
-            <div class="mini-title">Education</div>
-            <p><strong>B.S. in Cybersecurity</strong> - Bellevue University</p>
-            <p><strong>MBA Candidate</strong> - Rutgers University (2026)</p>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container section-header">
         <div>
-          <div class="eyebrow">What I do</div>
-          <h2>Teaching, mentoring, learning - in the open.</h2>
-        </div>
-      </div>
-      <div class="container highlight-grid">
-        <div class="highlight">
-          <div class="mini-title">Teaching & mentorship</div>
-          <p>High school robotics, electronics, computer science, and STEM. Curriculum design, labs, and helping students get comfortable making mistakes while they learn.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">FRC Robotics Mentor</div>
-          <p>Mentor for FRC Team 2180; lead drivetrain builds, electrical integration, driver practice, and competition readiness with students.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">Cybersecurity learning</div>
-          <p>Active study: web app security, robotics security, autonomous systems. Pentesting labs, drone security research, embedded experiments.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">Projects</div>
-          <p>Small tools, robotics demos, dashboards, and teaching resources - all based on real work, nothing staged.</p>
+          <div class="eyebrow">Tools I’m Learning</div>
+          <ul class="pill-list">
+            <li>ROS2 (beginner)</li>
+            <li>Linux terminal (beginner)</li>
+            <li>UAV simulation (ArduPilot SITL)</li>
+            <li>Firmware flashing + debug tools (beginner)</li>
+            <li>Protocol sniffing (beginner)</li>
+          </ul>
         </div>
       </div>
     </section>
-
-    <section id="work" class="section">
-      <div class="container section-header">
-        <div>
-          <div class="eyebrow">Projects</div>
-          <h2>Selected builds with punchy results.</h2>
-          <p>From experimental interfaces to production launches, here's a taste of the things I like to ship.</p>
-        </div>
-        <a class="ghost-link" href="#contact">Open to collaborations →</a>
-      </div>
-
-      <div class="container card-grid">
-        <article class="card project accent-cyan">
-          <div class="card-top">
-            <div class="pill">2025</div>
-            <div class="tag">Security tool</div>
-          </div>
-          <h3>DeepSniff</h3>
-          <p>AI-powered packet analyzer (Windows prototype) with real-time capture and AI-driven interpretation; dashboard planned.</p>
-          <ul class="pill-list">
-            <li>Security</li>
-            <li>Education</li>
-            <li>Automation</li>
-          </ul>
-          <div class="links">
-            <a href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener">Code</a>
-            <a href="#contact">Schedule a walkthrough</a>
-          </div>
-        </article>
-
-        <article class="card project accent-green">
-          <div class="card-top">
-            <div class="pill">2025</div>
-            <div class="tag">Platform</div>
-          </div>
-          <h3>Robotnix.dev</h3>
-          <p>Robotics curriculum portal with reproducible (nix-inspired) environments, course resources, and week-by-week assignments for educators.</p>
-          <ul class="pill-list">
-            <li>Nix</li>
-            <li>Robotics</li>
-            <li>Docs & guides</li>
-          </ul>
-          <div class="links">
-            <a href="https://robotnix.dev" target="_blank" rel="noopener">Visit site</a>
-            <a href="#contact">Collaborate</a>
-          </div>
-        </article>
-
-        <article class="card project accent-pink">
-          <div class="card-top">
-            <div class="pill">2024</div>
-            <div class="tag">CLI</div>
-          </div>
-          <h3>Ghost404</h3>
-          <p>Debian terminal tool: input a domain, auto-screenshot the target; includes -h help for quick usage.</p>
-          <ul class="pill-list">
-            <li>Linux</li>
-            <li>Automation</li>
-            <li>Recon</li>
-          </ul>
-          <div class="links">
-            <a href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener">Code</a>
-            <a href="#contact">Demo</a>
-          </div>
-        </article>
-
-        <article class="card project accent-yellow">
-          <div class="card-top">
-            <div class="pill">Active</div>
-            <div class="tag">Pentesting</div>
-          </div>
-          <h3>Web App PT Labs</h3>
-          <p>Hands-on assessments: file uploads, HTTP verb tampering, IDOR, SQLi, session handling, auth bypass, XXE labs.</p>
-          <ul class="pill-list">
-            <li>OWASP Top 10</li>
-            <li>Burp Suite</li>
-            <li>Nmap</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">Walkthroughs</a>
-          </div>
-        </article>
-
-        <article class="card project accent-green">
-          <div class="card-top">
-            <div class="pill">2024</div>
-            <div class="tag">Research</div>
-          </div>
-          <h3>Malware Analysis Workflow</h3>
-          <p>Evidence acquisition toolkit with static/dynamic analysis, memory forensics, and threat intel collection flows.</p>
-          <ul class="pill-list">
-            <li>DFIR</li>
-            <li>Analysis</li>
-            <li>Tooling</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">Share workflow</a>
-          </div>
-        </article>
-
-        <article class="card project accent-cyan">
-          <div class="card-top">
-            <div class="pill">2024</div>
-            <div class="tag">Web</div>
-          </div>
-          <h3>SecurityResearcher.dev</h3>
-          <p>Eleventy-powered hub for cyber research, tools, and writeups; focused on accessible publishing for security content.</p>
-          <ul class="pill-list">
-            <li>Eleventy</li>
-            <li>Static site</li>
-            <li>Research</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">View</a>
-          </div>
-        </article>
-
-        <article class="card project accent-pink">
-          <div class="card-top">
-            <div class="pill">Planned</div>
-            <div class="tag">Robotics Sec</div>
-          </div>
-          <h3>Robotics Security Experiments</h3>
-          <p>Lab series: ROS topic injection, drone telemetry manipulation, GPS spoofing simulation, sensor spoofing on ground robots.</p>
-          <ul class="pill-list">
-            <li>ROS2</li>
-            <li>UAV</li>
-            <li>Security</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">Follow progress</a>
-          </div>
-        </article>
-
-        <article class="card project accent-yellow">
-          <div class="card-top">
-            <div class="pill">2024</div>
-            <div class="tag">Infra</div>
-          </div>
-          <h3>GhostlyFi</h3>
-          <p>Local Wi-Fi dashboard inspired by WiFi Pineapple: adapter info, client tracking, injection mode toggle, runs offline.</p>
-          <ul class="pill-list">
-            <li>Networking</li>
-            <li>Dashboard</li>
-            <li>Offline-first</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">Demo</a>
-          </div>
-        </article>
-
-        <article class="card project accent-green">
-          <div class="card-top">
-            <div class="pill">2024</div>
-            <div class="tag">Debugging</div>
-          </div>
-          <h3>Web Dashboard Fixes</h3>
-          <p>Fixing Vercel asset paths, 404 media issues, bundle chunk sizing, and accessibility options for a live dashboard.</p>
-          <ul class="pill-list">
-            <li>Debugging</li>
-            <li>Performance</li>
-            <li>Accessibility</li>
-          </ul>
-          <div class="links">
-            <a href="#contact">Details</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container section-header">
-        <div>
-          <div class="eyebrow">Skills & focus</div>
-          <h2>How I teach, design curricula, and run research-minded labs.</h2>
-        </div>
-      </div>
-      <div class="container skills-grid">
-        <div class="skill-card">
-          <div class="mini-title">Engineering & Robotics Instructor</div>
-          <p>Project-based labs across VEX, Arduino, and fabrication; safety-first build and test cycles that keep students hands-on.</p>
-        </div>
-        <div class="skill-card">
-          <div class="mini-title">Curriculum Designer</div>
-          <p>Sequenced pathways, rubrics, and assessments that map robotics and cyber concepts to real-world engineering skills.</p>
-        </div>
-        <div class="skill-card">
-          <div class="mini-title">Security Research Focus</div>
-          <p>Web app security fundamentals, telemetry integrity for robots and drones, ROS2/embedded experiments shared as labs.</p>
-        </div>
-        <div class="skill-card">
-          <div class="mini-title">Autonomy & AI</div>
-          <p>Edge AI pilots for perception, simple planners, and validation routines that make autonomous behavior resilient and teachable.</p>
-        </div>
-        <div class="skill-card">
-          <div class="mini-title">Tools & platforms</div>
-          <p>VEXcode, Arduino IDE, Linux, GitHub Actions, fabrication tools, telemetry dashboards, and classroom-friendly dev environments.</p>
-        </div>
-        <div class="skill-card">
-          <div class="mini-title">Community & mentorship</div>
-          <p>FIRST mentoring, code reviews with students, and workshops that turn research experiments into approachable demos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container section-header">
-        <div>
-          <div class="eyebrow">Current goals</div>
-          <h2>What I’m working toward right now.</h2>
-        </div>
-      </div>
-      <div class="container highlight-grid">
-        <div class="highlight">
-          <div class="mini-title">Autonomous systems security</div>
-          <p>Learn more about securing robotics, drones, embedded systems, and AI-driven decisions.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">Better robotics curriculum</div>
-          <p>Refine labs and pathways that help students build, test, and safely break things.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">Drone & embedded security</div>
-          <p>Strengthen practical skills with telemetry, GPS spoofing simulations, and secure firmware workflows.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">MBA, Rutgers</div>
-          <p>Finish the MBA to support future leadership roles and sustainable growth for security programs I build.</p>
-        </div>
-        <div class="highlight">
-          <div class="mini-title">Publish honest writeups</div>
-          <p>Share real lessons from labs, fixes, and experiments—nothing inflated, nothing staged.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container section-header">
-        <div>
-          <div class="eyebrow">Contact</div>
-          <h2>Ready to build? Let’s chat.</h2>
-          <p>Tell me about the idea, timeline, and what a great outcome looks like.</p>
-        </div>
-      </div>
-      <div class="container contact-grid">
-        <div class="contact-card">
-          <div class="mini-title">Email</div>
-          <a class="contact-link" href="mailto:hey@Gh0stlyKn1ght.dev">hey@Gh0stlyKn1ght.dev</a>
-          <div class="mini-title">Signal boost</div>
-          <p>Open to collaborations, experiments, and shipping the next release together.</p>
-          <ul class="pill-list" style="margin-top:10px;">
-            <li>New Jersey · remote friendly</li>
-            <li>Hireable</li>
-            <li>Robotics & cyber educator</li>
-          </ul>
-        </div>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name">
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com">
-          </label>
-          <label>
-            What are we building?
-            <textarea name="message" rows="4" placeholder="Project details, goals, timeline..."></textarea>
-          </label>
-          <button type="submit" class="btn primary">Send message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
 <footer class="footer">
   <div class="container footer-bar">
     <div class="footer-copy">© 2025 Gh0stlyKn1ght</div>
     <div class="footer-links">
-      <a class="icon-link" href="https://linkedin.com/in/john-n-09aa1b5b" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4Zm-9 18H7V9h4v9Zm-2-10.3c-1 0-1.8-.8-1.8-1.7S8 4.3 9 4.3s1.8.8 1.8 1.7S10 7.7 9 7.7Zm11 10.3h-4v-5.2c0-1.2 0-2.8-1.8-2.8s-2.1 1.4-2.1 2.7V18h-4V9h3.8v1.2H12c.5-.9 1.7-1.8 3.5-1.8c3.7 0 4.4 2.4 4.4 5.4V18Z"/>
-        </svg>
-      </a>
       <a class="icon-link" href="https://github.com/Gh0stlyKn1ght" target="_blank" rel="noopener" aria-label="GitHub">
         <svg viewBox="0 0 24 24" class="ts-icon" aria-hidden="true" focusable="false">
           <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.41 7.86 10.94c.58.1.79-.25.79-.56c0-.28-.01-1.02-.02-2c-3.2.7-3.88-1.54-3.88-1.54c-.53-1.35-1.3-1.71-1.3-1.71c-1.06-.72.08-.71.08-.71c1.17.08 1.78 1.2 1.78 1.2c1.04 1.79 2.73 1.27 3.4.97c.1-.75.41-1.27.74-1.56c-2.55-.29-5.23-1.28-5.23-5.69c0-1.26.45-2.29 1.19-3.1c-.12-.29-.52-1.45.11-3.02c0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18c.64 1.57.24 2.73.12 3.02c.74.81 1.18 1.84 1.18 3.1c0 4.42-2.68 5.39-5.24 5.67c.42.36.8 1.1.8 2.22c0 1.6-.02 2.88-.02 3.28c0 .31.21.66.8.55C20.22 21.4 23.5 17.1 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
