@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="container" style="max-width: 700px; margin: 3rem auto; padding: 0 2rem;">
+  <article style="margin: 2rem 0;">
+    <header style="margin-bottom: 2rem; border-bottom: 1px solid rgba(112, 130, 178, 0.35); padding-bottom: 1.5rem;">
+      <h1 style="margin: 0 0 0.5rem 0; color: #25d6f5; font-size: 2.2rem;">{{ page.title }}</h1>
+      <p style="margin: 0; color: #9ba7cf; font-size: 0.95rem;">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+        {% if page.reading_time %}<span style="margin-left: 1rem;">{{ page.reading_time }} min read</span>{% endif %}
+      </p>
+    </header>
+
+    <div style="color: #cbd5ff; font-size: 1.05rem; line-height: 1.7;">
+      {{ content }}
+    </div>
+
+    {% if page.tags %}
+    <footer style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(112, 130, 178, 0.35);">
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        {% for tag in page.tags %}
+          <a href="{{ '/journal' | relative_url }}" style="display: inline-block; background: rgba(37, 214, 245, 0.1); color: #25d6f5; padding: 0.35rem 0.75rem; border-radius: 3px; font-size: 0.9rem; text-decoration: none;">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </footer>
+    {% endif %}
+  </article>
+</div>

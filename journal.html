@@ -1,0 +1,30 @@
+---
+layout: default
+title: Journal
+permalink: /journal/
+---
+
+<div class="container" style="max-width: 700px; margin: 3rem auto; padding: 0 2rem;">
+  <h1 style="color: #25d6f5; margin-bottom: 2rem; border-bottom: 1px solid rgba(112, 130, 178, 0.35); padding-bottom: 1rem;">Journal</h1>
+
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    {% for post in site.posts %}
+      <article style="background: rgba(37, 214, 245, 0.03); border: 1px solid rgba(112, 130, 178, 0.35); border-radius: 6px; padding: 1.5rem; transition: all 0.2s ease;">
+        <h2 style="margin: 0 0 0.5rem 0; font-size: 1.35rem;">
+          <a href="{{ post.url | relative_url }}" style="color: #25d6f5; text-decoration: none;">{{ post.title }}</a>
+        </h2>
+        <p style="margin: 0 0 1rem 0; color: #9ba7cf; font-size: 0.9rem;">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% if post.reading_time %}<span style="margin-left: 1rem;">{{ post.reading_time }} min read</span>{% endif %}
+        </p>
+        {% if post.excerpt %}
+          <p style="margin: 0; color: #9ba7cf; line-height: 1.6;">{{ post.excerpt }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+
+  {% if site.posts.size == 0 %}
+    <p style="color: #9ba7cf; text-align: center; padding: 2rem;">No posts yet. Check back soon!</p>
+  {% endif %}
+</div>

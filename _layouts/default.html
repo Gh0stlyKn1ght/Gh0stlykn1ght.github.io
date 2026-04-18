@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Gh0stlyKn1ght</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+</head>
+<body>
+  <div class="beam" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-top" aria-hidden="true"></div>
+  <div class="glow glow-bottom" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <div>
+          <a class="brand-name" href="{{ '/' | relative_url }}">Gh0stlyKn1ght</a>
+          <div class="brand-sub">
+            <span class="sub-accent sub-blue">Robotics</span>
+            <span class="sub-sep">·</span>
+            <span class="sub-accent sub-red">Security</span>
+            <span class="sub-sep">·</span>
+            <span class="sub-accent sub-pink">Autonomy</span>
+          </div>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/journal' | relative_url }}" {% if page.url contains '/journal' %}class="active"{% endif %}>Journal</a>
+        <a href="{{ '/#work' | relative_url }}">Projects</a>
+        <a href="{{ '/roadmap' | relative_url }}">Roadmap</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer style="text-align: center; padding: 2rem; border-top: 1px solid rgba(112, 130, 178, 0.35); margin-top: 3rem; color: #9ba7cf; font-size: 0.9rem;">
+    <p>© 2026 Gh0stlyKn1ght</p>
+  </footer>
+
+  <script defer src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>

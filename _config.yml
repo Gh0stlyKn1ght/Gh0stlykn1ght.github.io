@@ -5,6 +5,21 @@ baseurl: ""
 theme: null
 permalink: pretty
 plugins: []
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /journal/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - node_modules
   - README.md
